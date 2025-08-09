@@ -188,18 +188,28 @@
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
         position: relative;
-        background: linear-gradient(135deg, #86d1d3 0%, #23b2cf 100%);
+        /* Building locations - Light teal */
+        background: #86d1d3;
       }
 
       .location-badge:hover {
         transform: translateY(-1px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        background: #7bc5c7;
       }
 
       /* ===== ZOOM SPECIFIC STYLE ===== */
       .zoom {
-        background: linear-gradient(135deg, #23b2cf 0%, #86d1d3 100%);
-        color: #0d1516;
+        /* Zoom sessions - Dark background for strong contrast */
+        background: #0d1516;
+        color: #86d1d3;
+        border: 1px solid #23b2cf;
+      }
+
+      .zoom:hover {
+        background: #1a2526;
+        color: white;
+        border: 1px solid #86d1d3;
       }
 
       /* ===== FOOTER STYLES ===== */
@@ -341,9 +351,15 @@
         }
 
         .location-badge {
-          background: #f0f0f0;
-          color: black;
-          border: 1px solid #ccc;
+          background: #86d1d3 !important;
+          color: #0d1516 !important;
+          border: 1px solid #86d1d3 !important;
+        }
+
+        .location-badge.zoom {
+          background: #0d1516 !important;
+          color: #86d1d3 !important;
+          border: 1px solid #23b2cf !important;
         }
       }
     </style>

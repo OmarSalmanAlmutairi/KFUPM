@@ -200,16 +200,25 @@
 
       /* ===== ZOOM SPECIFIC STYLE ===== */
       .zoom {
-        /* Zoom sessions - Dark background for strong contrast */
-        background: #0d1516;
-        color: #86d1d3;
-        border: 1px solid #23b2cf;
+        /* Zoom sessions - Matching real Zoom app gradient */
+        background: linear-gradient(
+          135deg,
+          #4a90e2 0%,
+          #2d8cff 50%,
+          #1e7ce8 100%
+        );
+        color: white;
+        border: none;
       }
 
       .zoom:hover {
-        background: #1a2526;
+        background: linear-gradient(
+          135deg,
+          #3a80d2 0%,
+          #1e7ce8 50%,
+          #0e6cd8 100%
+        );
         color: white;
-        border: 1px solid #86d1d3;
       }
 
       /* ===== FOOTER STYLES ===== */
@@ -357,9 +366,9 @@
         }
 
         .location-badge.zoom {
-          background: #0d1516 !important;
-          color: #86d1d3 !important;
-          border: 1px solid #23b2cf !important;
+          background: #2d8cff !important;
+          color: white !important;
+          border: 1px solid #2d8cff !important;
         }
       }
     </style>
